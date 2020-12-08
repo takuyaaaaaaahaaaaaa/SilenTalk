@@ -7,14 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF7B4321257FF3630009C1C1 /* MessageSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7B4320257FF3630009C1C1 /* MessageSetting.swift */; };
 		EFE43874257FA731009E17FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE43873257FA731009E17FD /* AppDelegate.swift */; };
 		EFE43876257FA731009E17FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE43875257FA731009E17FD /* SceneDelegate.swift */; };
-		EFE43878257FA731009E17FD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE43877257FA731009E17FD /* ContentView.swift */; };
+		EFE43878257FA731009E17FD /* AnswerCardRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE43877257FA731009E17FD /* AnswerCardRow.swift */; };
 		EFE4387A257FA732009E17FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFE43879257FA732009E17FD /* Assets.xcassets */; };
 		EFE4387D257FA732009E17FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFE4387C257FA732009E17FD /* Preview Assets.xcassets */; };
 		EFE43880257FA732009E17FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFE4387E257FA732009E17FD /* LaunchScreen.storyboard */; };
 		EFE4388B257FA732009E17FD /* SilentTalkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE4388A257FA732009E17FD /* SilentTalkTests.swift */; };
 		EFE43896257FA732009E17FD /* SilentTalkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE43895257FA732009E17FD /* SilentTalkUITests.swift */; };
+		EFE438A8257FAC76009E17FD /* AnswerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE438A7257FAC76009E17FD /* AnswerCard.swift */; };
+		EFE438BA257FAECA009E17FD /* answerCardData.json in Resources */ = {isa = PBXBuildFile; fileRef = EFE438B9257FAECA009E17FD /* answerCardData.json */; };
+		EFE438C5257FB473009E17FD /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE438C4257FB473009E17FD /* Data.swift */; };
+		EFE438CD257FCC6F009E17FD /* AnswerCardList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE438CC257FCC6F009E17FD /* AnswerCardList.swift */; };
+		EFE438D2257FCE08009E17FD /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE438D1257FCE08009E17FD /* File.swift */; };
+		EFE438D9257FCE42009E17FD /* STButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE438D8257FCE42009E17FD /* STButton.swift */; };
+		EFE438E1257FE08B009E17FD /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE438E0257FE08B009E17FD /* UserData.swift */; };
+		EFE438E6257FE2CF009E17FD /* AnswerCardDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE438E5257FE2CF009E17FD /* AnswerCardDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +44,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EF7B4320257FF3630009C1C1 /* MessageSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageSetting.swift; sourceTree = "<group>"; };
 		EFE43870257FA731009E17FD /* SilentTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SilentTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFE43873257FA731009E17FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFE43875257FA731009E17FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EFE43877257FA731009E17FD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EFE43877257FA731009E17FD /* AnswerCardRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerCardRow.swift; sourceTree = "<group>"; };
 		EFE43879257FA732009E17FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFE4387C257FA732009E17FD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EFE4387F257FA732009E17FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +59,14 @@
 		EFE43891257FA732009E17FD /* SilentTalkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SilentTalkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFE43895257FA732009E17FD /* SilentTalkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SilentTalkUITests.swift; sourceTree = "<group>"; };
 		EFE43897257FA732009E17FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFE438A7257FAC76009E17FD /* AnswerCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerCard.swift; sourceTree = "<group>"; };
+		EFE438B9257FAECA009E17FD /* answerCardData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = answerCardData.json; sourceTree = "<group>"; };
+		EFE438C4257FB473009E17FD /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		EFE438CC257FCC6F009E17FD /* AnswerCardList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerCardList.swift; sourceTree = "<group>"; };
+		EFE438D1257FCE08009E17FD /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		EFE438D8257FCE42009E17FD /* STButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STButton.swift; sourceTree = "<group>"; };
+		EFE438E0257FE08B009E17FD /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		EFE438E5257FE2CF009E17FD /* AnswerCardDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerCardDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +117,11 @@
 		EFE43872257FA731009E17FD /* SilentTalk */ = {
 			isa = PBXGroup;
 			children = (
+				EFE438D6257FCE16009E17FD /* View */,
+				EFE438B5257FAE98009E17FD /* Resources */,
+				EFE438A6257FAC5C009E17FD /* Models */,
 				EFE43873257FA731009E17FD /* AppDelegate.swift */,
 				EFE43875257FA731009E17FD /* SceneDelegate.swift */,
-				EFE43877257FA731009E17FD /* ContentView.swift */,
 				EFE43879257FA732009E17FD /* Assets.xcassets */,
 				EFE4387E257FA732009E17FD /* LaunchScreen.storyboard */,
 				EFE43881257FA732009E17FD /* Info.plist */,
@@ -134,6 +154,45 @@
 				EFE43897257FA732009E17FD /* Info.plist */,
 			);
 			path = SilentTalkUITests;
+			sourceTree = "<group>";
+		};
+		EFE438A6257FAC5C009E17FD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EFE438A7257FAC76009E17FD /* AnswerCard.swift */,
+				EFE438D1257FCE08009E17FD /* File.swift */,
+				EFE438E0257FE08B009E17FD /* UserData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EFE438B5257FAE98009E17FD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EFE438B9257FAECA009E17FD /* answerCardData.json */,
+				EFE438C4257FB473009E17FD /* Data.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EFE438D6257FCE16009E17FD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EFE438D7257FCE25009E17FD /* Parts */,
+				EFE438CC257FCC6F009E17FD /* AnswerCardList.swift */,
+				EFE43877257FA731009E17FD /* AnswerCardRow.swift */,
+				EF7B4320257FF3630009C1C1 /* MessageSetting.swift */,
+				EFE438E5257FE2CF009E17FD /* AnswerCardDetail.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EFE438D7257FCE25009E17FD /* Parts */ = {
+			isa = PBXGroup;
+			children = (
+				EFE438D8257FCE42009E17FD /* STButton.swift */,
+			);
+			path = Parts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFE43880257FA732009E17FD /* LaunchScreen.storyboard in Resources */,
+				EFE438BA257FAECA009E17FD /* answerCardData.json in Resources */,
 				EFE4387D257FA732009E17FD /* Preview Assets.xcassets in Resources */,
 				EFE4387A257FA732009E17FD /* Assets.xcassets in Resources */,
 			);
@@ -267,8 +327,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFE43874257FA731009E17FD /* AppDelegate.swift in Sources */,
+				EFE438CD257FCC6F009E17FD /* AnswerCardList.swift in Sources */,
+				EFE438D2257FCE08009E17FD /* File.swift in Sources */,
+				EFE438E1257FE08B009E17FD /* UserData.swift in Sources */,
+				EFE438E6257FE2CF009E17FD /* AnswerCardDetail.swift in Sources */,
+				EFE438C5257FB473009E17FD /* Data.swift in Sources */,
+				EFE438D9257FCE42009E17FD /* STButton.swift in Sources */,
+				EFE438A8257FAC76009E17FD /* AnswerCard.swift in Sources */,
 				EFE43876257FA731009E17FD /* SceneDelegate.swift in Sources */,
-				EFE43878257FA731009E17FD /* ContentView.swift in Sources */,
+				EF7B4321257FF3630009C1C1 /* MessageSetting.swift in Sources */,
+				EFE43878257FA731009E17FD /* AnswerCardRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
