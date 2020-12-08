@@ -1,0 +1,596 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EFE43874257FA731009E17FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE43873257FA731009E17FD /* AppDelegate.swift */; };
+		EFE43876257FA731009E17FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE43875257FA731009E17FD /* SceneDelegate.swift */; };
+		EFE43878257FA731009E17FD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE43877257FA731009E17FD /* ContentView.swift */; };
+		EFE4387A257FA732009E17FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFE43879257FA732009E17FD /* Assets.xcassets */; };
+		EFE4387D257FA732009E17FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFE4387C257FA732009E17FD /* Preview Assets.xcassets */; };
+		EFE43880257FA732009E17FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFE4387E257FA732009E17FD /* LaunchScreen.storyboard */; };
+		EFE4388B257FA732009E17FD /* SilentTalkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE4388A257FA732009E17FD /* SilentTalkTests.swift */; };
+		EFE43896257FA732009E17FD /* SilentTalkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE43895257FA732009E17FD /* SilentTalkUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EFE43887257FA732009E17FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFE43868257FA731009E17FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFE4386F257FA731009E17FD;
+			remoteInfo = SilentTalk;
+		};
+		EFE43892257FA732009E17FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFE43868257FA731009E17FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFE4386F257FA731009E17FD;
+			remoteInfo = SilentTalk;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EFE43870257FA731009E17FD /* SilentTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SilentTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFE43873257FA731009E17FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EFE43875257FA731009E17FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EFE43877257FA731009E17FD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EFE43879257FA732009E17FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EFE4387C257FA732009E17FD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EFE4387F257FA732009E17FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EFE43881257FA732009E17FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFE43886257FA732009E17FD /* SilentTalkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SilentTalkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFE4388A257FA732009E17FD /* SilentTalkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SilentTalkTests.swift; sourceTree = "<group>"; };
+		EFE4388C257FA732009E17FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFE43891257FA732009E17FD /* SilentTalkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SilentTalkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFE43895257FA732009E17FD /* SilentTalkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SilentTalkUITests.swift; sourceTree = "<group>"; };
+		EFE43897257FA732009E17FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EFE4386D257FA731009E17FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFE43883257FA732009E17FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFE4388E257FA732009E17FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EFE43867257FA731009E17FD = {
+			isa = PBXGroup;
+			children = (
+				EFE43872257FA731009E17FD /* SilentTalk */,
+				EFE43889257FA732009E17FD /* SilentTalkTests */,
+				EFE43894257FA732009E17FD /* SilentTalkUITests */,
+				EFE43871257FA731009E17FD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EFE43871257FA731009E17FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFE43870257FA731009E17FD /* SilentTalk.app */,
+				EFE43886257FA732009E17FD /* SilentTalkTests.xctest */,
+				EFE43891257FA732009E17FD /* SilentTalkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EFE43872257FA731009E17FD /* SilentTalk */ = {
+			isa = PBXGroup;
+			children = (
+				EFE43873257FA731009E17FD /* AppDelegate.swift */,
+				EFE43875257FA731009E17FD /* SceneDelegate.swift */,
+				EFE43877257FA731009E17FD /* ContentView.swift */,
+				EFE43879257FA732009E17FD /* Assets.xcassets */,
+				EFE4387E257FA732009E17FD /* LaunchScreen.storyboard */,
+				EFE43881257FA732009E17FD /* Info.plist */,
+				EFE4387B257FA732009E17FD /* Preview Content */,
+			);
+			path = SilentTalk;
+			sourceTree = "<group>";
+		};
+		EFE4387B257FA732009E17FD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EFE4387C257FA732009E17FD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EFE43889257FA732009E17FD /* SilentTalkTests */ = {
+			isa = PBXGroup;
+			children = (
+				EFE4388A257FA732009E17FD /* SilentTalkTests.swift */,
+				EFE4388C257FA732009E17FD /* Info.plist */,
+			);
+			path = SilentTalkTests;
+			sourceTree = "<group>";
+		};
+		EFE43894257FA732009E17FD /* SilentTalkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EFE43895257FA732009E17FD /* SilentTalkUITests.swift */,
+				EFE43897257FA732009E17FD /* Info.plist */,
+			);
+			path = SilentTalkUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EFE4386F257FA731009E17FD /* SilentTalk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFE4389A257FA732009E17FD /* Build configuration list for PBXNativeTarget "SilentTalk" */;
+			buildPhases = (
+				EFE4386C257FA731009E17FD /* Sources */,
+				EFE4386D257FA731009E17FD /* Frameworks */,
+				EFE4386E257FA731009E17FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SilentTalk;
+			productName = SilentTalk;
+			productReference = EFE43870257FA731009E17FD /* SilentTalk.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EFE43885257FA732009E17FD /* SilentTalkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFE4389D257FA732009E17FD /* Build configuration list for PBXNativeTarget "SilentTalkTests" */;
+			buildPhases = (
+				EFE43882257FA732009E17FD /* Sources */,
+				EFE43883257FA732009E17FD /* Frameworks */,
+				EFE43884257FA732009E17FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EFE43888257FA732009E17FD /* PBXTargetDependency */,
+			);
+			name = SilentTalkTests;
+			productName = SilentTalkTests;
+			productReference = EFE43886257FA732009E17FD /* SilentTalkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EFE43890257FA732009E17FD /* SilentTalkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFE438A0257FA732009E17FD /* Build configuration list for PBXNativeTarget "SilentTalkUITests" */;
+			buildPhases = (
+				EFE4388D257FA732009E17FD /* Sources */,
+				EFE4388E257FA732009E17FD /* Frameworks */,
+				EFE4388F257FA732009E17FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EFE43893257FA732009E17FD /* PBXTargetDependency */,
+			);
+			name = SilentTalkUITests;
+			productName = SilentTalkUITests;
+			productReference = EFE43891257FA732009E17FD /* SilentTalkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EFE43868257FA731009E17FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					EFE4386F257FA731009E17FD = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					EFE43885257FA732009E17FD = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = EFE4386F257FA731009E17FD;
+					};
+					EFE43890257FA732009E17FD = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = EFE4386F257FA731009E17FD;
+					};
+				};
+			};
+			buildConfigurationList = EFE4386B257FA731009E17FD /* Build configuration list for PBXProject "SilentTalk" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EFE43867257FA731009E17FD;
+			productRefGroup = EFE43871257FA731009E17FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EFE4386F257FA731009E17FD /* SilentTalk */,
+				EFE43885257FA732009E17FD /* SilentTalkTests */,
+				EFE43890257FA732009E17FD /* SilentTalkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EFE4386E257FA731009E17FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFE43880257FA732009E17FD /* LaunchScreen.storyboard in Resources */,
+				EFE4387D257FA732009E17FD /* Preview Assets.xcassets in Resources */,
+				EFE4387A257FA732009E17FD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFE43884257FA732009E17FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFE4388F257FA732009E17FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EFE4386C257FA731009E17FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFE43874257FA731009E17FD /* AppDelegate.swift in Sources */,
+				EFE43876257FA731009E17FD /* SceneDelegate.swift in Sources */,
+				EFE43878257FA731009E17FD /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFE43882257FA732009E17FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFE4388B257FA732009E17FD /* SilentTalkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFE4388D257FA732009E17FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFE43896257FA732009E17FD /* SilentTalkUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EFE43888257FA732009E17FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFE4386F257FA731009E17FD /* SilentTalk */;
+			targetProxy = EFE43887257FA732009E17FD /* PBXContainerItemProxy */;
+		};
+		EFE43893257FA732009E17FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFE4386F257FA731009E17FD /* SilentTalk */;
+			targetProxy = EFE43892257FA732009E17FD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EFE4387E257FA732009E17FD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFE4387F257FA732009E17FD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EFE43898257FA732009E17FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EFE43899257FA732009E17FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EFE4389B257FA732009E17FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SilentTalk/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SilentTalk/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.mitudesu.SilentTalk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EFE4389C257FA732009E17FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SilentTalk/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SilentTalk/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.mitudesu.SilentTalk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EFE4389E257FA732009E17FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SilentTalkTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.mitudesu.SilentTalkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SilentTalk.app/SilentTalk";
+			};
+			name = Debug;
+		};
+		EFE4389F257FA732009E17FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SilentTalkTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.mitudesu.SilentTalkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SilentTalk.app/SilentTalk";
+			};
+			name = Release;
+		};
+		EFE438A1257FA732009E17FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SilentTalkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.mitudesu.SilentTalkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SilentTalk;
+			};
+			name = Debug;
+		};
+		EFE438A2257FA732009E17FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SilentTalkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.mitudesu.SilentTalkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SilentTalk;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EFE4386B257FA731009E17FD /* Build configuration list for PBXProject "SilentTalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFE43898257FA732009E17FD /* Debug */,
+				EFE43899257FA732009E17FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFE4389A257FA732009E17FD /* Build configuration list for PBXNativeTarget "SilentTalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFE4389B257FA732009E17FD /* Debug */,
+				EFE4389C257FA732009E17FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFE4389D257FA732009E17FD /* Build configuration list for PBXNativeTarget "SilentTalkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFE4389E257FA732009E17FD /* Debug */,
+				EFE4389F257FA732009E17FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFE438A0257FA732009E17FD /* Build configuration list for PBXNativeTarget "SilentTalkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFE438A1257FA732009E17FD /* Debug */,
+				EFE438A2257FA732009E17FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EFE43868257FA731009E17FD /* Project object */;
+}
