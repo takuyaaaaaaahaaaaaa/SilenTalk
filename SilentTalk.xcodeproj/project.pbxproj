@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		EF7B4321257FF3630009C1C1 /* MessageSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7B4320257FF3630009C1C1 /* MessageSetting.swift */; };
+		EF7B43262581C2470009C1C1 /* AnswerCardSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7B43252581C2470009C1C1 /* AnswerCardSetting.swift */; };
+		EF7B434E2582343E0009C1C1 /* View+isHidden.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7B434D2582343E0009C1C1 /* View+isHidden.swift */; };
+		EF7B4356258239720009C1C1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7B4355258239720009C1C1 /* User.swift */; };
+		EF7B436725824A660009C1C1 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7B436625824A660009C1C1 /* Memo.swift */; };
 		EFE43874257FA731009E17FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE43873257FA731009E17FD /* AppDelegate.swift */; };
 		EFE43876257FA731009E17FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE43875257FA731009E17FD /* SceneDelegate.swift */; };
 		EFE43878257FA731009E17FD /* AnswerCardRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE43877257FA731009E17FD /* AnswerCardRow.swift */; };
@@ -17,13 +21,11 @@
 		EFE4388B257FA732009E17FD /* SilentTalkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE4388A257FA732009E17FD /* SilentTalkTests.swift */; };
 		EFE43896257FA732009E17FD /* SilentTalkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE43895257FA732009E17FD /* SilentTalkUITests.swift */; };
 		EFE438A8257FAC76009E17FD /* AnswerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE438A7257FAC76009E17FD /* AnswerCard.swift */; };
-		EFE438BA257FAECA009E17FD /* answerCardData.json in Resources */ = {isa = PBXBuildFile; fileRef = EFE438B9257FAECA009E17FD /* answerCardData.json */; };
-		EFE438C5257FB473009E17FD /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE438C4257FB473009E17FD /* Data.swift */; };
+		EFE438BA257FAECA009E17FD /* userData.json in Resources */ = {isa = PBXBuildFile; fileRef = EFE438B9257FAECA009E17FD /* userData.json */; };
+		EFE438C5257FB473009E17FD /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE438C4257FB473009E17FD /* Repository.swift */; };
 		EFE438CD257FCC6F009E17FD /* AnswerCardList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE438CC257FCC6F009E17FD /* AnswerCardList.swift */; };
-		EFE438D2257FCE08009E17FD /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE438D1257FCE08009E17FD /* File.swift */; };
-		EFE438D9257FCE42009E17FD /* STButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE438D8257FCE42009E17FD /* STButton.swift */; };
-		EFE438E1257FE08B009E17FD /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE438E0257FE08B009E17FD /* UserData.swift */; };
-		EFE438E6257FE2CF009E17FD /* AnswerCardDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE438E5257FE2CF009E17FD /* AnswerCardDetail.swift */; };
+		EFE438D9257FCE42009E17FD /* STChangeViewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE438D8257FCE42009E17FD /* STChangeViewButton.swift */; };
+		EFE438E1257FE08B009E17FD /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE438E0257FE08B009E17FD /* ModelData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,11 @@
 
 /* Begin PBXFileReference section */
 		EF7B4320257FF3630009C1C1 /* MessageSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageSetting.swift; sourceTree = "<group>"; };
+		EF7B43252581C2470009C1C1 /* AnswerCardSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerCardSetting.swift; sourceTree = "<group>"; };
+		EF7B43422582265C0009C1C1 /* SilentTalk.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SilentTalk.entitlements; sourceTree = "<group>"; };
+		EF7B434D2582343E0009C1C1 /* View+isHidden.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+isHidden.swift"; sourceTree = "<group>"; };
+		EF7B4355258239720009C1C1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EF7B436625824A660009C1C1 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
 		EFE43870257FA731009E17FD /* SilentTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SilentTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFE43873257FA731009E17FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFE43875257FA731009E17FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,13 +67,11 @@
 		EFE43895257FA732009E17FD /* SilentTalkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SilentTalkUITests.swift; sourceTree = "<group>"; };
 		EFE43897257FA732009E17FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFE438A7257FAC76009E17FD /* AnswerCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerCard.swift; sourceTree = "<group>"; };
-		EFE438B9257FAECA009E17FD /* answerCardData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = answerCardData.json; sourceTree = "<group>"; };
-		EFE438C4257FB473009E17FD /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		EFE438B9257FAECA009E17FD /* userData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = userData.json; sourceTree = "<group>"; };
+		EFE438C4257FB473009E17FD /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		EFE438CC257FCC6F009E17FD /* AnswerCardList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerCardList.swift; sourceTree = "<group>"; };
-		EFE438D1257FCE08009E17FD /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
-		EFE438D8257FCE42009E17FD /* STButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STButton.swift; sourceTree = "<group>"; };
-		EFE438E0257FE08B009E17FD /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
-		EFE438E5257FE2CF009E17FD /* AnswerCardDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerCardDetail.swift; sourceTree = "<group>"; };
+		EFE438D8257FCE42009E17FD /* STChangeViewButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STChangeViewButton.swift; sourceTree = "<group>"; };
+		EFE438E0257FE08B009E17FD /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +99,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EF7B434C2582341B0009C1C1 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				EF7B434D2582343E0009C1C1 /* View+isHidden.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		EFE43867257FA731009E17FD = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +130,8 @@
 		EFE43872257FA731009E17FD /* SilentTalk */ = {
 			isa = PBXGroup;
 			children = (
+				EF7B434C2582341B0009C1C1 /* Helper */,
+				EF7B43422582265C0009C1C1 /* SilentTalk.entitlements */,
 				EFE438D6257FCE16009E17FD /* View */,
 				EFE438B5257FAE98009E17FD /* Resources */,
 				EFE438A6257FAC5C009E17FD /* Models */,
@@ -160,8 +175,8 @@
 			isa = PBXGroup;
 			children = (
 				EFE438A7257FAC76009E17FD /* AnswerCard.swift */,
-				EFE438D1257FCE08009E17FD /* File.swift */,
-				EFE438E0257FE08B009E17FD /* UserData.swift */,
+				EF7B4355258239720009C1C1 /* User.swift */,
+				EFE438E0257FE08B009E17FD /* ModelData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -169,8 +184,8 @@
 		EFE438B5257FAE98009E17FD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				EFE438B9257FAECA009E17FD /* answerCardData.json */,
-				EFE438C4257FB473009E17FD /* Data.swift */,
+				EFE438B9257FAECA009E17FD /* userData.json */,
+				EFE438C4257FB473009E17FD /* Repository.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -182,7 +197,8 @@
 				EFE438CC257FCC6F009E17FD /* AnswerCardList.swift */,
 				EFE43877257FA731009E17FD /* AnswerCardRow.swift */,
 				EF7B4320257FF3630009C1C1 /* MessageSetting.swift */,
-				EFE438E5257FE2CF009E17FD /* AnswerCardDetail.swift */,
+				EF7B43252581C2470009C1C1 /* AnswerCardSetting.swift */,
+				EF7B436625824A660009C1C1 /* Memo.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -190,7 +206,7 @@
 		EFE438D7257FCE25009E17FD /* Parts */ = {
 			isa = PBXGroup;
 			children = (
-				EFE438D8257FCE42009E17FD /* STButton.swift */,
+				EFE438D8257FCE42009E17FD /* STChangeViewButton.swift */,
 			);
 			path = Parts;
 			sourceTree = "<group>";
@@ -299,7 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFE43880257FA732009E17FD /* LaunchScreen.storyboard in Resources */,
-				EFE438BA257FAECA009E17FD /* answerCardData.json in Resources */,
+				EFE438BA257FAECA009E17FD /* userData.json in Resources */,
 				EFE4387D257FA732009E17FD /* Preview Assets.xcassets in Resources */,
 				EFE4387A257FA732009E17FD /* Assets.xcassets in Resources */,
 			);
@@ -327,14 +343,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFE43874257FA731009E17FD /* AppDelegate.swift in Sources */,
+				EF7B4356258239720009C1C1 /* User.swift in Sources */,
 				EFE438CD257FCC6F009E17FD /* AnswerCardList.swift in Sources */,
-				EFE438D2257FCE08009E17FD /* File.swift in Sources */,
-				EFE438E1257FE08B009E17FD /* UserData.swift in Sources */,
-				EFE438E6257FE2CF009E17FD /* AnswerCardDetail.swift in Sources */,
-				EFE438C5257FB473009E17FD /* Data.swift in Sources */,
-				EFE438D9257FCE42009E17FD /* STButton.swift in Sources */,
+				EF7B43262581C2470009C1C1 /* AnswerCardSetting.swift in Sources */,
+				EF7B434E2582343E0009C1C1 /* View+isHidden.swift in Sources */,
+				EFE438E1257FE08B009E17FD /* ModelData.swift in Sources */,
+				EFE438C5257FB473009E17FD /* Repository.swift in Sources */,
+				EFE438D9257FCE42009E17FD /* STChangeViewButton.swift in Sources */,
 				EFE438A8257FAC76009E17FD /* AnswerCard.swift in Sources */,
 				EFE43876257FA731009E17FD /* SceneDelegate.swift in Sources */,
+				EF7B436725824A660009C1C1 /* Memo.swift in Sources */,
 				EF7B4321257FF3630009C1C1 /* MessageSetting.swift in Sources */,
 				EFE43878257FA731009E17FD /* AnswerCardRow.swift in Sources */,
 			);
@@ -504,8 +522,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SilentTalk/SilentTalk.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SilentTalk/Preview Content\"";
+				DEVELOPMENT_TEAM = J9ALTX5GVP;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SilentTalk/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -514,6 +535,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.mitudesu.SilentTalk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -524,8 +546,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SilentTalk/SilentTalk.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SilentTalk/Preview Content\"";
+				DEVELOPMENT_TEAM = J9ALTX5GVP;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SilentTalk/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -534,6 +559,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.mitudesu.SilentTalk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

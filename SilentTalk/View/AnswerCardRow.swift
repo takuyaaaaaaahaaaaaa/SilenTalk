@@ -8,54 +8,61 @@
 import SwiftUI
 
 struct AnswerCardRow: View {
-    @State var answerCard: AnswerCard
+    @EnvironmentObject var modelData: ModelData
+    var index: Int
+    private var answerCard:AnswerCard {
+        return modelData.answerCard[index]
+    }
     
     var body: some View {
         VStack(alignment:.leading){
             HStack(alignment: .top){
-                Toggle("",isOn: $answerCard.isShow)
+                Toggle("",isOn: $modelData.user.answerCard[index].isShow)
                     .fixedSize()
                 Spacer()
                 VStack(spacing:10){
-                    if answerCard.isShow {
-                        Text(answerCard.title)
+                    Text(answerCard.title)
+                        .font(.title)
+                        .bold()
+                        .frame(maxWidth:.infinity,maxHeight: 37)
+                        .border(Color.gray)
+                    HStack{
+                        Text(answerCard.answers[answerCard.selectedAnswer])
                             .font(.title)
-                            .frame(maxWidth:.infinity,maxHeight: 30)
-                            .border(Color.gray)
-                    } else {
-                        Text(answerCard.title)
-                            .foregroundColor(Color(white: 0.7, opacity: 0.5))
-                            .font(.title)
-                            .frame(maxWidth:.infinity,maxHeight: 30)
-                            .border(Color(white: 0.7, opacity: 0.5))
+                        Spacer()
+                        STChangeStateButton(text:"切替",action: {
+                            modelData.user.answerCard[index].selectedAnswer = emptyCheck(answerCard.selectedAnswer + 1)
+                            modelData.save()
+                        })
                     }
-                    if answerCard.isShow {
-                        HStack{
-                            Text(answerCard.answers[answerCard.selectedAnswer])
-                                .font(.title)
-                            Spacer()
-                            STButton(text:"切替",action: {
-                                if ((answerCard.answers.count-1) > answerCard.selectedAnswer ){
-                                    answerCard.selectedAnswer += 1
-                                } else {
-                                    answerCard.selectedAnswer = 0
-                                }
-                                
-                            })
-                        }
-                    }
-                }
+                }.isHidden(!answerCard.isShow)
             }
         }
         .padding(.trailing)
     }
 }
 
+extension AnswerCardRow {
+    private func emptyCheck(_ index: Int) -> Int{
+        // 選択可能な範囲を超えた場合
+        if (index > answerCard.answers.count - 1 ){
+            return 0
+        }
+        // 空文字の場合、次の文字まで再帰的に探す
+        if (answerCard.answers[index] == ""){
+            return emptyCheck(index + 1 )
+        }
+        return index
+    }
+}
+
+
+
 struct AnswerCardRow_Previews: PreviewProvider {
     static var previews: some View {
         Group{
-            AnswerCardRow(answerCard: answerCardData[0])
-            AnswerCardRow(answerCard: answerCardData[1])
+            AnswerCardRow(index: 0).environmentObject(ModelData())
+            AnswerCardRow(index: 1).environmentObject(ModelData())
         }.previewLayout(.fixed(width: 300, height: 120))
         
     }

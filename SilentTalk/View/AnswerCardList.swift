@@ -8,23 +8,23 @@
 import SwiftUI
 
 struct AnswerCardList: View {
-    @EnvironmentObject var userData: UserData
+    @EnvironmentObject var modelData: ModelData
     
     var body: some View {
-        VStack{
-            Text(self.userData.headMessage).font(.custom("上部コメント", size:26))
-            Spacer()
+        VStack(spacing:40){
+            Text(modelData.user.headMessage).font(.custom("上部コメント", size:30))
             LazyVStack(content: {
-                ForEach(userData.answerCard, id: \.id) { answerCard in
-                    AnswerCardRow(answerCard: answerCard)
+                ForEach(modelData.answerCard.indices) { idx in
+                    AnswerCardRow(index: idx)
                 }
             })
-            Spacer()
-            Text(self.userData.bottomMessage).font(.custom("下部コメント", size:26))
+            Text(modelData.user.bottomMessage).font(.custom("下部コメント", size:30))
             HStack{
                 Spacer()
-                STButton(text:"設定",action: {})
-                STButton(text:"メモ",action: {})
+                STChangeViewButton(text:"設定",nextView: MessageSetting())
+                    .offset(x: 40)
+                Spacer()
+                STChangeCoverViewButton(text:"メモ",nextView: Memo())
             }.padding(.trailing)
         }
         .padding(.vertical)
@@ -34,7 +34,7 @@ struct AnswerCardList: View {
 struct LandmarkList_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            AnswerCardList()
-        }
+            AnswerCardList().environmentObject(ModelData())
+        }.previewDevice(PreviewDevice(rawValue: "iPhone SE (2nd generation)"))
     }
 }
