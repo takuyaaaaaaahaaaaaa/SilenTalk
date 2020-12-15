@@ -12,10 +12,10 @@
 		EF7B434E2582343E0009C1C1 /* View+isHidden.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7B434D2582343E0009C1C1 /* View+isHidden.swift */; };
 		EF7B4356258239720009C1C1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7B4355258239720009C1C1 /* User.swift */; };
 		EF7B436725824A660009C1C1 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7B436625824A660009C1C1 /* Memo.swift */; };
+		EF85615E2588703D0091FCEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF85615D2588703D0091FCEE /* Assets.xcassets */; };
 		EFE43874257FA731009E17FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE43873257FA731009E17FD /* AppDelegate.swift */; };
 		EFE43876257FA731009E17FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE43875257FA731009E17FD /* SceneDelegate.swift */; };
 		EFE43878257FA731009E17FD /* AnswerCardRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE43877257FA731009E17FD /* AnswerCardRow.swift */; };
-		EFE4387A257FA732009E17FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFE43879257FA732009E17FD /* Assets.xcassets */; };
 		EFE4387D257FA732009E17FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFE4387C257FA732009E17FD /* Preview Assets.xcassets */; };
 		EFE43880257FA732009E17FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFE4387E257FA732009E17FD /* LaunchScreen.storyboard */; };
 		EFE4388B257FA732009E17FD /* SilentTalkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE4388A257FA732009E17FD /* SilentTalkTests.swift */; };
@@ -52,11 +52,11 @@
 		EF7B434D2582343E0009C1C1 /* View+isHidden.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+isHidden.swift"; sourceTree = "<group>"; };
 		EF7B4355258239720009C1C1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		EF7B436625824A660009C1C1 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
+		EF85615D2588703D0091FCEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFE43870257FA731009E17FD /* SilentTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SilentTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFE43873257FA731009E17FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFE43875257FA731009E17FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EFE43877257FA731009E17FD /* AnswerCardRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerCardRow.swift; sourceTree = "<group>"; };
-		EFE43879257FA732009E17FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFE4387C257FA732009E17FD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EFE4387F257FA732009E17FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EFE43881257FA732009E17FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -137,7 +137,7 @@
 				EFE438A6257FAC5C009E17FD /* Models */,
 				EFE43873257FA731009E17FD /* AppDelegate.swift */,
 				EFE43875257FA731009E17FD /* SceneDelegate.swift */,
-				EFE43879257FA732009E17FD /* Assets.xcassets */,
+				EF85615D2588703D0091FCEE /* Assets.xcassets */,
 				EFE4387E257FA732009E17FD /* LaunchScreen.storyboard */,
 				EFE43881257FA732009E17FD /* Info.plist */,
 				EFE4387B257FA732009E17FD /* Preview Content */,
@@ -317,7 +317,7 @@
 				EFE43880257FA732009E17FD /* LaunchScreen.storyboard in Resources */,
 				EFE438BA257FAECA009E17FD /* userData.json in Resources */,
 				EFE4387D257FA732009E17FD /* Preview Assets.xcassets in Resources */,
-				EFE4387A257FA732009E17FD /* Assets.xcassets in Resources */,
+				EF85615E2588703D0091FCEE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
