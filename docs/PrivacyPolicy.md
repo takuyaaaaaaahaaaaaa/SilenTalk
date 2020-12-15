@@ -1,58 +1,55 @@
-# Privacy Policy
+# 個人情報保護方針
+冨永拓弥は、サイレントークアプリを無料アプリとして構築しました。本サービスは冨永拓弥が無償で提供するものであり、そのまま使用することを目的としています。
 
-Takuya Tominaga built the SilenTalk app as a Free app. This SERVICE is provided by Takuya Tominaga at no cost and is intended for use as is.
+このページは、私のサービスを利用することを決めた人がいた場合、個人情報の収集、使用、開示に関する私の方針を訪問者に知らせるために使用されます。
 
-This page is used to inform visitors regarding my policies with the collection, use, and disclosure of Personal Information if anyone decided to use my Service.
+あなたが私のサービスを使用することを選択した場合、あなたはこのポリシーに関連した情報の収集と使用に同意したことになります。私が収集した個人情報は、サービスの提供と改善のために使用されます。私は、本プライバシーポリシーに記載されている場合を除き、お客様の情報を使用したり、誰かと共有したりすることはありません。
 
-If you choose to use my Service, then you agree to the collection and use of information in relation to this policy. The Personal Information that I collect is used for providing and improving the Service. I will not use or share your information with anyone except as described in this Privacy Policy.
+本プライバシーポリシーで使用される用語は、本プライバシーポリシーに別段の定義がない限り、サイレントークでアクセス可能な当社の利用規約と同じ意味を持ちます。
 
-The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at SilenTalk unless otherwise defined in this Privacy Policy.
+# 情報の収集と使用
 
-# Information Collection and Use
+当社のサービスをより良くご利用いただくために、私はお客様に特定の個人情報の提供をお願いすることがあります。私が要求した情報は、お客様のデバイス上に保持され、私が収集することはありません。
 
-For a better experience, while using our Service, I may require you to provide us with certain personally identifiable information. The information that I request will be retained on your device and is not collected by me in any way.
+# ログデータ
 
-# Log Data
+私は、お客様が私のサービスを利用するたびに、アプリにエラーが発生した場合、私はログデータと呼ばれるお客様の携帯電話上のデータや情報（サードパーティ製品を介して）を収集することをお知らせしたいと思います。このログデータには、お客様のデバイスのインターネットプロトコル（「IP」）アドレス、デバイス名、オペレーティングシステムのバージョン、マイサービスを利用する際のアプリの設定、お客様がマイサービスを利用した日時、その他の統計情報などが含まれる場合があります。
 
-I want to inform you that whenever you use my Service, in a case of an error in the app I collect data and information (through third party products) on your phone called Log Data. This Log Data may include information such as your device Internet Protocol (“IP”) address, device name, operating system version, the configuration of the app when utilizing my Service, the time and date of your use of the Service, and other statistics.
+# クッキー
 
-# Cookies
+クッキーとは、一般的に匿名のユニークな識別子として使用される少量のデータを含むファイルです。これらは、お客様が訪問したウェブサイトからお客様のブラウザに送信され、お客様のデバイスの内部メモリに保存されます。
 
-Cookies are files with a small amount of data that are commonly used as anonymous unique identifiers. These are sent to your browser from the websites that you visit and are stored on your device's internal memory.
+本サービスでは、これらの「クッキー」を明示的に使用することはありません。ただし、本アプリは、情報を収集し、サービスを向上させるために「クッキー」を使用するサードパーティのコードやライブラリを使用する場合があります。お客様は、これらのクッキーを受け入れるか拒否するかを選択することができ、クッキーがお客様のデバイスに送信されたときに知ることができます。お客様が当社のクッキーを拒否することを選択した場合、本サービスの一部を使用できない場合があります。
 
-This Service does not use these “cookies” explicitly. However, the app may use third party code and libraries that use “cookies” to collect information and improve their services. You have the option to either accept or refuse these cookies and know when a cookie is being sent to your device. If you choose to refuse our cookies, you may not be able to use some portions of this Service.
+# サービス提供者
 
-# Service Providers
+私は、以下の理由により、第三者の企業や個人を雇用することがあります。
 
-I may employ third-party companies and individuals due to the following reasons:
+- 当社のサービスを円滑にするため。
+- 私たちに代わってサービスを提供するため。
+- サービスに関連したサービスを提供するため
+- 当社のサービスがどのように使用されているかを分析するのを支援するため。
 
-- To facilitate our Service;
-- To provide the Service on our behalf;
-- To perform Service-related services; or
-- To assist us in analyzing how our Service is used.
+本サービスの利用者に、これらの第三者があなたの個人情報にアクセスできることをお知らせしたいと思います。その理由は、当社に代わって彼らに割り当てられたタスクを実行するためです。しかし、彼らは他の目的のために情報を開示したり、使用したりしない義務があります。
 
-I want to inform users of this Service that these third parties have access to your Personal Information. The reason is to perform the tasks assigned to them on our behalf. However, they are obligated not to disclose or use the information for any other purpose.
+# セキュリティ
 
-# Security
+私たちは、お客様の個人情報を提供することへの信頼を大切にし、商業的に許容される手段を用いて個人情報を保護するよう努めています。ただし、インターネット上での送信方法や電子的な保存方法は100％安全で信頼できるものではなく、その絶対的な安全性を保証するものではありませんのでご了承ください。
 
-I value your trust in providing us your Personal Information, thus we are striving to use commercially acceptable means of protecting it. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and I cannot guarantee its absolute security.
+# 他のサイトへのリンク
 
-# Links to Other Sites
+本サービスには、他のサイトへのリンクが含まれている場合があります。第三者のリンクをクリックすると、そのサイトに誘導されます。これらの外部サイトは、私が運営しているものではないことに注意してください。したがって、これらのウェブサイトのプライバシーポリシーを確認することを強くお勧めします。私は、第三者のサイトやサービスのコンテンツ、プライバシーポリシー、または慣行を管理しておらず、その責任を負いません。
 
-This Service may contain links to other sites. If you click on a third-party link, you will be directed to that site. Note that these external sites are not operated by me. Therefore, I strongly advise you to review the Privacy Policy of these websites. I have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.
+# 本プライバシーポリシーの変更
 
-# Children's Privacy
+私は、当社のプライバシーポリシーを随時更新することがあります。したがって、変更がある場合は、このページを定期的に確認することをお勧めします。変更があった場合は、このページに新しいプライバシーポリシーを掲載することで通知します。
 
-These Services do not address anyone under the age of 13. I do not knowingly collect personally identifiable information from children under 13. In the case I discover that a child under 13 has provided me with personal information, I immediately delete this from our servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact me so that I will be able to do necessary actions.
+このポリシーは、2020-12-15の時点で有効です。
 
-# Changes to This Privacy Policy
+# お問い合わせ
 
-I may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. I will notify you of any changes by posting the new Privacy Policy on this page.
+私のプライバシーポリシーについてご質問やご提案がある場合は、遠慮なく majikani2011@gmail.com までご連絡ください。
 
-This policy is effective as of 2020-12-15
+このプライバシーポリシーページは privacypolicytemplate.net で作成され、App Privacy Policy Generator によって修正/生成されました。
 
-# Contact Us
-
-If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me at majikani2011@gmail.com.
-
-This privacy policy page was created at privacypolicytemplate.net and modified/generated by App Privacy Policy Generator
+www.DeepL.com/Translator（無料版）で翻訳しました。
