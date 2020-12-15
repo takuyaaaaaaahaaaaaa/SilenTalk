@@ -525,6 +525,7 @@
 				CODE_SIGN_ENTITLEMENTS = SilentTalk/SilentTalk.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.4.1;
 				DEVELOPMENT_ASSET_PATHS = "\"SilentTalk/Preview Content\"";
 				DEVELOPMENT_TEAM = J9ALTX5GVP;
 				ENABLE_PREVIEWS = YES;
@@ -549,6 +550,7 @@
 				CODE_SIGN_ENTITLEMENTS = SilentTalk/SilentTalk.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.4.1;
 				DEVELOPMENT_ASSET_PATHS = "\"SilentTalk/Preview Content\"";
 				DEVELOPMENT_TEAM = J9ALTX5GVP;
 				ENABLE_PREVIEWS = YES;
