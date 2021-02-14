@@ -14,6 +14,7 @@ struct AnswerCardList: View {
         VStack(){
             Text(modelData.user.headMessage)
                 .font(.custom("上部コメント", size:30))
+                .padding()
                 
             LazyVStack(content: {
                 ForEach(modelData.answerCard.indices) { idx in
@@ -21,6 +22,7 @@ struct AnswerCardList: View {
                 }
             })
             Text(modelData.user.bottomMessage).font(.custom("下部コメント", size:30))
+                .padding()
             HStack{
                 Spacer()
                 STChangeViewButton(text:"設定",nextView: MessageSetting())
