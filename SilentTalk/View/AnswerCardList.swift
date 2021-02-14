@@ -11,8 +11,10 @@ struct AnswerCardList: View {
     @EnvironmentObject var modelData: ModelData
     
     var body: some View {
-        VStack(spacing:40){
-            Text(modelData.user.headMessage).font(.custom("上部コメント", size:30))
+        VStack(){
+            Text(modelData.user.headMessage)
+                .font(.custom("上部コメント", size:30))
+                
             LazyVStack(content: {
                 ForEach(modelData.answerCard.indices) { idx in
                     AnswerCardRow(index: idx)
