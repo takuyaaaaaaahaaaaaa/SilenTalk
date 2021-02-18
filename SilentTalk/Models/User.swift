@@ -29,7 +29,7 @@ struct User: Hashable, Codable {
         do {
             customSize = try values.decode(Double.self, forKey: .customSize)
         } catch DecodingError.keyNotFound{
-            customSize = 0
+            customSize = 28
         }
     }
 }

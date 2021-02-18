@@ -46,7 +46,7 @@ class UserTests: XCTestCase {
             XCTAssertEqual(oldUser.answerCard, newUser.answerCard)
             XCTAssertEqual(oldUser.memo, newUser.memo)
             // customSizeが設定されていない場合はデフォルトで0が設定される
-            XCTAssertEqual(0, newUser.customSize)
+            XCTAssertEqual(28, newUser.customSize)
         } catch {
             XCTFail()
         }
