@@ -107,6 +107,14 @@
 			path = Helper;
 			sourceTree = "<group>";
 		};
+		EFA8C0FF25DEE4B000CD95DF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EFE438E0257FE08B009E17FD /* ModelData.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		EFE43867257FA731009E17FD = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +138,7 @@
 		EFE43872257FA731009E17FD /* SilentTalk */ = {
 			isa = PBXGroup;
 			children = (
+				EFA8C0FF25DEE4B000CD95DF /* ViewModel */,
 				EF7B434C2582341B0009C1C1 /* Helper */,
 				EF7B43422582265C0009C1C1 /* SilentTalk.entitlements */,
 				EFE438D6257FCE16009E17FD /* View */,
@@ -176,7 +185,6 @@
 			children = (
 				EFE438A7257FAC76009E17FD /* AnswerCard.swift */,
 				EF7B4355258239720009C1C1 /* User.swift */,
-				EFE438E0257FE08B009E17FD /* ModelData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
