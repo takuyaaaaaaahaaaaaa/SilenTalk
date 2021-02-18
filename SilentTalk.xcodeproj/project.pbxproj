@@ -138,12 +138,12 @@
 		EFE43872257FA731009E17FD /* SilentTalk */ = {
 			isa = PBXGroup;
 			children = (
+				EFE438B5257FAE98009E17FD /* Resources */,
+				EFE438D6257FCE16009E17FD /* View */,
 				EFA8C0FF25DEE4B000CD95DF /* ViewModel */,
+				EFE438A6257FAC5C009E17FD /* Models */,
 				EF7B434C2582341B0009C1C1 /* Helper */,
 				EF7B43422582265C0009C1C1 /* SilentTalk.entitlements */,
-				EFE438D6257FCE16009E17FD /* View */,
-				EFE438B5257FAE98009E17FD /* Resources */,
-				EFE438A6257FAC5C009E17FD /* Models */,
 				EFE43873257FA731009E17FD /* AppDelegate.swift */,
 				EFE43875257FA731009E17FD /* SceneDelegate.swift */,
 				EF85615D2588703D0091FCEE /* Assets.xcassets */,
