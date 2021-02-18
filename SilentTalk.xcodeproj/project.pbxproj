@@ -13,12 +13,12 @@
 		EF7B4356258239720009C1C1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7B4355258239720009C1C1 /* User.swift */; };
 		EF7B436725824A660009C1C1 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7B436625824A660009C1C1 /* Memo.swift */; };
 		EF85615E2588703D0091FCEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF85615D2588703D0091FCEE /* Assets.xcassets */; };
+		EFA8C0E525DED6CF00CD95DF /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA8C0E425DED6CF00CD95DF /* UserTests.swift */; };
 		EFE43874257FA731009E17FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE43873257FA731009E17FD /* AppDelegate.swift */; };
 		EFE43876257FA731009E17FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE43875257FA731009E17FD /* SceneDelegate.swift */; };
 		EFE43878257FA731009E17FD /* AnswerCardRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE43877257FA731009E17FD /* AnswerCardRow.swift */; };
 		EFE4387D257FA732009E17FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFE4387C257FA732009E17FD /* Preview Assets.xcassets */; };
 		EFE43880257FA732009E17FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFE4387E257FA732009E17FD /* LaunchScreen.storyboard */; };
-		EFE4388B257FA732009E17FD /* SilentTalkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE4388A257FA732009E17FD /* SilentTalkTests.swift */; };
 		EFE43896257FA732009E17FD /* SilentTalkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE43895257FA732009E17FD /* SilentTalkUITests.swift */; };
 		EFE438A8257FAC76009E17FD /* AnswerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE438A7257FAC76009E17FD /* AnswerCard.swift */; };
 		EFE438BA257FAECA009E17FD /* userData.json in Resources */ = {isa = PBXBuildFile; fileRef = EFE438B9257FAECA009E17FD /* userData.json */; };
@@ -53,6 +53,7 @@
 		EF7B4355258239720009C1C1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		EF7B436625824A660009C1C1 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
 		EF85615D2588703D0091FCEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EFA8C0E425DED6CF00CD95DF /* UserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTests.swift; sourceTree = "<group>"; };
 		EFE43870257FA731009E17FD /* SilentTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SilentTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFE43873257FA731009E17FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFE43875257FA731009E17FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,7 +62,6 @@
 		EFE4387F257FA732009E17FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EFE43881257FA732009E17FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFE43886257FA732009E17FD /* SilentTalkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SilentTalkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EFE4388A257FA732009E17FD /* SilentTalkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SilentTalkTests.swift; sourceTree = "<group>"; };
 		EFE4388C257FA732009E17FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFE43891257FA732009E17FD /* SilentTalkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SilentTalkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFE43895257FA732009E17FD /* SilentTalkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SilentTalkUITests.swift; sourceTree = "<group>"; };
@@ -107,6 +107,14 @@
 			path = Helper;
 			sourceTree = "<group>";
 		};
+		EFA8C0FF25DEE4B000CD95DF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EFE438E0257FE08B009E17FD /* ModelData.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		EFE43867257FA731009E17FD = {
 			isa = PBXGroup;
 			children = (
@@ -130,11 +138,12 @@
 		EFE43872257FA731009E17FD /* SilentTalk */ = {
 			isa = PBXGroup;
 			children = (
-				EF7B434C2582341B0009C1C1 /* Helper */,
-				EF7B43422582265C0009C1C1 /* SilentTalk.entitlements */,
 				EFE438D6257FCE16009E17FD /* View */,
+				EFA8C0FF25DEE4B000CD95DF /* ViewModel */,
 				EFE438B5257FAE98009E17FD /* Resources */,
 				EFE438A6257FAC5C009E17FD /* Models */,
+				EF7B434C2582341B0009C1C1 /* Helper */,
+				EF7B43422582265C0009C1C1 /* SilentTalk.entitlements */,
 				EFE43873257FA731009E17FD /* AppDelegate.swift */,
 				EFE43875257FA731009E17FD /* SceneDelegate.swift */,
 				EF85615D2588703D0091FCEE /* Assets.xcassets */,
@@ -156,7 +165,7 @@
 		EFE43889257FA732009E17FD /* SilentTalkTests */ = {
 			isa = PBXGroup;
 			children = (
-				EFE4388A257FA732009E17FD /* SilentTalkTests.swift */,
+				EFA8C0E425DED6CF00CD95DF /* UserTests.swift */,
 				EFE4388C257FA732009E17FD /* Info.plist */,
 			);
 			path = SilentTalkTests;
@@ -176,7 +185,6 @@
 			children = (
 				EFE438A7257FAC76009E17FD /* AnswerCard.swift */,
 				EF7B4355258239720009C1C1 /* User.swift */,
-				EFE438E0257FE08B009E17FD /* ModelData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -362,7 +370,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFE4388B257FA732009E17FD /* SilentTalkTests.swift in Sources */,
+				EFA8C0E525DED6CF00CD95DF /* UserTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,6 +507,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
