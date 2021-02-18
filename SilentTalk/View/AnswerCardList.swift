@@ -9,14 +9,13 @@ import SwiftUI
 
 struct AnswerCardList: View {
     @EnvironmentObject var modelData: ModelData
-    var commentSize:CGFloat {
+    var messageSize:CGFloat {
         return CGFloat(modelData.user.customSize + 2)
     }
     
     var body: some View {
         VStack(){
-            Text(modelData.user.headMessage)
-                .font(.custom("", size:commentSize))
+            MessageText(text: modelData.user.headMessage, size: messageSize, isColor: modelData.user.coloredMessage)
                 .padding()
             
             LazyVStack(content: {
@@ -24,13 +23,13 @@ struct AnswerCardList: View {
                     AnswerCardRow(index: idx)
                 }
             })
-            Text(modelData.user.bottomMessage).font(.custom("", size:commentSize))
+            MessageText(text: modelData.user.bottomMessage, size: messageSize, isColor: modelData.user.coloredMessage)
                 .padding()
             HStack{
                 Spacer()
-                Stepper( "", value: $modelData.user.customSize, in: modelData.charRange)
+                Stepper( "", value: $modelData.user.customSize, in: CHAR_SIZE_RENGE)
                     .padding(.bottom, 0.0)
-                    .frame(width: 100, height: 50)
+                    .fixedSize()
                 Spacer()
                 STChangeViewButton(text:"設定",nextView: MessageSetting())
                 Spacer()

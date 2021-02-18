@@ -1,5 +1,6 @@
 {
     "customSize":28.0,
+    "coloredMessage":true,
     "headMessage":"私は耳が聞こえづらいです",
     "bottomMessage": "ありがとうございます",
     "answerCard": [

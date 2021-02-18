@@ -6,13 +6,15 @@
 //
 
 struct User: Hashable, Codable {
-    var customSize: Double = 0
+    var coloredMessage:Bool
+    var customSize: Double
     var headMessage: String
     var bottomMessage: String
     var answerCard: [AnswerCard]
     var memo: String
     
     private enum CodingKeys:CodingKey {
+        case coloredMessage
         case customSize
         case headMessage
         case bottomMessage
@@ -30,6 +32,11 @@ struct User: Hashable, Codable {
             customSize = try values.decode(Double.self, forKey: .customSize)
         } catch DecodingError.keyNotFound{
             customSize = 28
+        }
+        do {
+            coloredMessage = try values.decode(Bool.self, forKey: .coloredMessage)
+        } catch DecodingError.keyNotFound{
+            coloredMessage = true
         }
     }
 }

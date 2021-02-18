@@ -16,7 +16,7 @@ struct AnswerCardSetting: View {
     
     var nextNumber: Int {
         get {
-            return (self.cardNumber + 1) % modelData.answerCardLimit
+            return (self.cardNumber + 1) % ANSWER_CARD_LIMIT
         }
     }
     var body: some View {
@@ -28,7 +28,7 @@ struct AnswerCardSetting: View {
                     .font(.title)
                 Text(subTitle)
                     .font(.largeTitle).foregroundColor(.gray)
-                ForEach(0..<modelData.answerLimit){ index in
+                ForEach(0..<ANSWER_LIMIT){ index in
                     TextField("回答", text: $modelData.user.answerCard[cardNumber].answers[index])
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .font(.title)
