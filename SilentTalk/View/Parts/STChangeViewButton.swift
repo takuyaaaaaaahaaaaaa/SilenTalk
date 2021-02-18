@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// 画面遷移ボタン（シートで移動）
 struct STChangeViewButton<NextView: View>: View {
     var text: String
     var nextView: NextView?
@@ -26,6 +27,7 @@ struct STChangeViewButton<NextView: View>: View {
     }
 }
 
+// 画面遷移ボタン（フルスクリーンで移動）
 struct STChangeCoverViewButton<NextView: View>: View {
     var text: String
     var nextView: NextView?

@@ -23,7 +23,8 @@ struct AnswerCardRow: View {
                 VStack(spacing:10){
                     Text(answerCard.title)
                         .font(.custom("Bold", size: CGFloat(modelData.user.customSize)))
-                        .frame(maxWidth:.infinity,maxHeight: CGFloat(modelData.charRange.upperBound))
+                        .frame(maxWidth:.infinity,maxHeight: CGFloat(CHAR_SIZE_RENGE.upperBound))
+                        .offset(y: 4.0)
                         .border(Color.gray)
                     HStack{
                         Text(answerCard.answers[answerCard.selectedAnswer])
@@ -62,7 +63,7 @@ struct AnswerCardRow_Previews: PreviewProvider {
         Group{
             AnswerCardRow(index: 0).environmentObject(ModelData())
             AnswerCardRow(index: 1).environmentObject(ModelData())
-        }.previewLayout(.fixed(width: 300, height: 120))
+        }.previewLayout(.fixed(width: 300, height: 150))
         
     }
 }

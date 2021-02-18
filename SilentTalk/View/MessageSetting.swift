@@ -14,16 +14,16 @@ struct MessageSetting: View {
     var body: some View {
         HStack{
             VStack(alignment: .leading, spacing: 26.0) {
-                Text("上部コメント")
-                    .font(.largeTitle).foregroundColor(.gray)
-                TextField("上部メッセージ", text: $modelData.user.headMessage)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .font(.title)
+                HStack{
+                    Text("上部コメント")
+                        .font(.largeTitle).foregroundColor(.gray)
+                    Toggle(isOn: $modelData.user.coloredMessage) {
+                    }.toggleStyle(SwitchToggleStyle(tint: UIColor.MESSAGE_COLOR)).fixedSize()
+                }
+                MessageTextField(defaultMessage: "上部メッセージ", binding: $modelData.user.headMessage, isColor: modelData.user.coloredMessage)
                 Text("下部コメント")
                     .font(.largeTitle).foregroundColor(.gray)
-                TextField("下部メッセージ", text: $modelData.user.bottomMessage)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .font(.title)
+                MessageTextField(defaultMessage: "下部メッセージ", binding: $modelData.user.bottomMessage, isColor:  modelData.user.coloredMessage)
                 Spacer()
                 HStack{
                     STChangeStateButton(text:"戻る",action:{
