@@ -16,11 +16,11 @@ struct MessageText: View {
     var body: some View {
         if(isColor){
             Text(text)
-                .font(.custom("", size:size))
+                .font(.custom("Bold", size:size))
                 .foregroundColor(UIColor.MESSAGE_COLOR)
         } else {
             Text(text)
-                .font(.custom("", size:size))
+                .font(.custom("Bold", size:size))
         }
     }
 }
@@ -34,12 +34,12 @@ struct MessageTextField: View {
         if(isColor){
             TextField(defaultMessage, text: binding)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
-                .font(.title)
+                .font(.custom("Bold", size:30))
                 .foregroundColor(UIColor.MESSAGE_COLOR)
         } else {
             TextField(defaultMessage, text: binding)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
-                .font(.title)
+                .font(.custom("Bold", size:30))
         }
     }
 }
@@ -50,8 +50,10 @@ struct MessagText_Previews: PreviewProvider {
         Group{
             MessageText(text: "こんにちは", size: 30, isColor: true).environmentObject(ModelData())
             MessageText(text: "こんにちは", size: 30, isColor: false).environmentObject(ModelData())
-//            MessageTextField(defaultMessage: "上部コメント", binding:.constant("string") , isColor: true)
         }.previewLayout(.fixed(width: 300, height: 150))
-        
+        Group{
+            MessageTextField(defaultMessage: "上部コメント", binding:.constant("耳が聞こえづらいです") , isColor: true)
+        }.previewLayout(.fixed(width: 300, height: 300))
     }
 }
+
