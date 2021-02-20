@@ -18,9 +18,11 @@ struct MessageText: View {
             Text(text)
                 .font(.custom("Bold", size:size))
                 .foregroundColor(UIColor.MESSAGE_COLOR)
+                .lineLimit(nil)
         } else {
             Text(text)
                 .font(.custom("Bold", size:size))
+                .lineLimit(nil)
         }
     }
 }
@@ -30,16 +32,27 @@ struct MessageTextField: View {
     var defaultMessage: String
     var binding: Binding<String>
     var isColor: Bool
+    var size: CGFloat
     var body: some View {
         if(isColor){
-            TextField(defaultMessage, text: binding)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .font(.custom("Bold", size:30))
+            TextEditor(text: binding)
+                .font(.custom("Bold", size:size))
+                .overlay(
+                    RoundedRectangle(cornerRadius: 8)
+                        .stroke(Color.gray, lineWidth: 1)
+                )
+                .frame(minHeight:80,maxHeight:.infinity)
+                .fixedSize(horizontal: false, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
                 .foregroundColor(UIColor.MESSAGE_COLOR)
         } else {
             TextField(defaultMessage, text: binding)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .font(.custom("Bold", size:30))
+                .font(.custom("Bold", size:size))
+                .overlay(
+                    RoundedRectangle(cornerRadius: 8)
+                        .stroke(Color.gray, lineWidth: 1)
+                )
+                .frame(minHeight:80,maxHeight:.infinity)
+                .fixedSize(horizontal: false, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
         }
     }
 }
@@ -52,7 +65,7 @@ struct MessagText_Previews: PreviewProvider {
             MessageText(text: "こんにちは", size: 30, isColor: false).environmentObject(ModelData())
         }.previewLayout(.fixed(width: 300, height: 150))
         Group{
-            MessageTextField(defaultMessage: "上部コメント", binding:.constant("耳が聞こえづらいです") , isColor: true)
+            MessageTextField(defaultMessage: "上部コメント", binding:.constant("耳が聞こえづらいです") , isColor: true,size: 30)
         }.previewLayout(.fixed(width: 300, height: 300))
     }
 }
