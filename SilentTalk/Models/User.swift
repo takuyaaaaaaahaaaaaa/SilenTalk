@@ -5,6 +5,8 @@
 //  Created by takuya_tominaga on 12/10/20.
 //
 
+import SwiftUI
+
 struct User: Hashable, Codable {
     var coloredMessage:Bool
     var customSize: Double

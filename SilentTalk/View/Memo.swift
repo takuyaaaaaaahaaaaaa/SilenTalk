@@ -20,11 +20,11 @@ struct Memo: View {
                 .frame(maxHeight:.infinity)
                 .font(.title)
             HStack{
-                STChangeStateButton(text:"戻る",action:{
+                STButton(text:"戻る",action:{
                     self.presentationMode.wrappedValue.dismiss()
                 })
                 Spacer()
-                STChangeStateButton(text:"保存",action:{
+                STButton(text:"保存",action:{
                     modelData.save()
                     UIApplication.shared.endEditing()
                 })

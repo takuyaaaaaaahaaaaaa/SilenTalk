@@ -14,33 +14,15 @@ struct UserRepository {
     
     func load<T: Decodable>(_ filename: String, as type: T.Type = T.self) -> T {
         
-        // ユーザデフォルトに登録済みの場合
+        // UserDefaultsからユーザ設定情報を読み込む
         if let data = UserDefaults.standard.data(forKey: "userData") {
-            do {
-                return try JSONDecoder().decode(T.self, from: data)
-            } catch {
-                fatalError("Couldn't parse \(filename) as \(T.self):\n\(error)")
-            }
+                return try! JSONDecoder().decode(T.self, from: data)
         }
         
-        // ユーザデフォルトに未登録の場合はjsonファイルの設定値から読み込む
-        guard let file = Bundle.main.url(forResource: filename, withExtension: nil)
-        else {
-            fatalError("Couldn't find \(filename) in main bundle.")
-        }
-        
-        let data: Data
-        do {
-            data = try Data(contentsOf: file)
-        } catch {
-            fatalError("Couldn't load \(filename) from main bundle:\n\(error)")
-        }
-        
-        do {
-            return try JSONDecoder().decode(T.self, from: data)
-        } catch {
-            fatalError("Couldn't parse \(filename) as \(T.self):\n\(error)")
-        }
+        // jsonファイルからデフォルトで設定されたユーザ設定情報を読み込む
+        let file = Bundle.main.url(forResource: filename, withExtension: nil)!
+        let data = try! Data(contentsOf: file)
+        return try! JSONDecoder().decode(T.self, from: data)
     }
     
     func save<T: Encodable>(_ userData:T)-> Void {

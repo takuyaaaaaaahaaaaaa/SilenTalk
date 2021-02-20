@@ -30,7 +30,7 @@ struct AnswerCardRow: View {
                         Text(answerCard.answers[answerCard.selectedAnswer])
                             .font(.custom("", size: CGFloat(modelData.user.customSize)))
                         Spacer()
-                        STChangeStateButton(text:"切替",action: {
+                        STButton(text:"切替",action: {
                             modelData.user.answerCard[index].selectedAnswer = emptyCheck(answerCard.selectedAnswer + 1)
                             modelData.save()
                         })

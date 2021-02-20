@@ -25,3 +25,21 @@ extension ModelData{
         }        
     }
 }
+
+// 文字の大きさ変更
+extension ModelData {
+    func sizeUpChar(){
+        guard (user.customSize + CHAR_SIZE_CHENGE_STEP) < CHAR_SIZE_RENGE.upperBound else {
+            return
+        }
+        user.customSize = user.customSize + CHAR_SIZE_CHENGE_STEP
+    }
+    
+    func sizeDownChar(){
+        guard (user.customSize - CHAR_SIZE_CHENGE_STEP) > CHAR_SIZE_RENGE.lowerBound else {
+            user.customSize = CHAR_SIZE_RENGE.lowerBound
+            return
+        }
+        user.customSize = user.customSize - CHAR_SIZE_CHENGE_STEP
+    }
+}
