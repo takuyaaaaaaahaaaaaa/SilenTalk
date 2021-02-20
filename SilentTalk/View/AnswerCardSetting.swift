@@ -35,12 +35,12 @@ struct AnswerCardSetting: View {
                 }
                 Spacer()
                 HStack{
-                    STChangeStateButton(text:"戻る",action:{
+                    STButton(text:"戻る",action:{
                         self.presentationMode.wrappedValue.dismiss()
                         
                     })
                    Spacer()
-                    STChangeStateButton(text:"次へ",action:{
+                    STButton(text:"次へ",action:{
                         cardNumber = nextNumber
                     })
                 }

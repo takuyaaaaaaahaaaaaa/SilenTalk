@@ -18,6 +18,7 @@ struct MessageText: View {
             Text(text)
                 .font(.custom("Bold", size:size))
                 .foregroundColor(UIColor.MESSAGE_COLOR)
+                .clipped()
                 .lineLimit(nil)
         } else {
             Text(text)
@@ -45,7 +46,7 @@ struct MessageTextField: View {
                 .fixedSize(horizontal: false, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
                 .foregroundColor(UIColor.MESSAGE_COLOR)
         } else {
-            TextField(defaultMessage, text: binding)
+            TextEditor(text: binding)
                 .font(.custom("Bold", size:size))
                 .overlay(
                     RoundedRectangle(cornerRadius: 8)

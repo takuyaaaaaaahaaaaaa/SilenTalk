@@ -25,7 +25,7 @@ struct MessageSetting: View {
                     .font(.largeTitle).foregroundColor(.gray)
                 MessageTextField(defaultMessage: "下部メッセージ", binding: $modelData.user.bottomMessage, isColor:  modelData.user.coloredMessage,size: 20)
                 HStack{
-                    STChangeStateButton(text:"戻る",action:{
+                    STButton(text:"戻る",action:{
                         self.presentationMode.wrappedValue.dismiss()
                     })
                     Spacer()
