@@ -21,7 +21,7 @@ struct AnswerCardSetting: View {
     }
     var body: some View {
         HStack{
-            VStack(alignment: .leading, spacing: 16.0) {
+            VStack(alignment: .leading, spacing: 14.0) {
                 Text("\(mainTitle) \(cardNumber + 1)").font(.largeTitle).foregroundColor(.gray)
                 TextField("タイトル", text: $modelData.user.answerCard[cardNumber].title)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
@@ -45,7 +45,6 @@ struct AnswerCardSetting: View {
                     })
                 }
             }
-            Spacer()
         }.padding()
         .onDisappear(){
             //画面遷移時に保存
